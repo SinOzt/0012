@@ -1,0 +1,6 @@
+#API key/secret
+consumer_key: CHANGE_ME
+consumer_secret: CHANGE_ME
+#Access token/secret
+access_token: CHANGE_ME
+access_token_secret: CHANGE_ME

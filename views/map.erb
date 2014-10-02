@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Good World</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="author" content="Andrew Noonan">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@twitterdev">
+  <meta name="twitter:title" content="Twitter Streaming Map Demo">
+  <meta name="twitter:description" content="A visual representation of the activity happening on Twitter around you, right now.">
+  <meta name="twitter:creator" content="@noonisms">
+  <meta name="twitter:image:src" content="http://twitterdevdemo.com/assets/screenShot.png">
+  <meta name="twitter:domain" content="twitterdevdemo.com">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/application.css" media="screen"/>
+  <link rel="shortcut icon" href="//abs.twimg.com/favicons/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/twt/twt.min.css" type="text/css">
+  <script src="/twt/twt.all.min.js"></script>
+</head>
+<body>
+
+<header class="navbar navbar-default navbar-fixed-top">
+  <nav role="navigation">
+    <a href="http://github.com/twitterdev/sample-ruby-app">
+      <img style="position: absolute; top: 0; right: 0; border: 0;"
+           src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67"
+           alt="Fork me on GitHub">
+    </a>
+
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Twitter</a>
+
+        <h1 class="navbar-text">Twitter Streaming API Map Demo</h1>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="https://twitter.com/TwitterDev" class="twitter-follow-button" data-size="large"
+             data-show-count="false">Follow @TwitterDev</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<div id="sidebar-nav">
+  <div align="center">
+    <h3>Happening Now <span id="tpm" class="badge">0 TPM</span></h3>
+
+    <div id="btn">
+      <button id="pause" type="button" class="btn btn-default btn-lg" data-toggle="button">
+        <span class="glyphicon glyphicon-pause"></span>Pause Stream
+      </button>
+      <button id="play" type="button" class="btn btn-default btn-lg" data-toggle="button" style="display:none;">
+        <span class="glyphicon glyphicon-play"></span>Play Stream
+      </button>
+    </div>
+  </div>
+  <div id="tweets">
+    <ul id="list"></ul>
+  </div>
+</div>
+<div id="map-canvas"/>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="//maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<script async src="//platform.twitter.com/widgets.js"></script>
+<script type="text/javascript" src="/js/tweets.js"></script>
+</body>
+</html>

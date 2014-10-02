@@ -1,0 +1,167 @@
+html { height: 100% }
+body { height: 100%; margin: 0; padding: 0 }
+#map-canvas { height: 100% }
+
+body {
+    padding-top: 50px;
+}
+
+.navbar {
+    height: 50px;
+}
+
+.navbar-default {
+    background-color: #55acee;
+    border: none;
+}
+
+.navbar-default .navbar-brand {
+    width: 25px;
+    height: 50px;
+    background: url(../assets/twitter-logo.png) center center no-repeat;
+    background-size: 25px 20px;
+    text-indent: -9999px;
+}
+
+.navbar-default .navbar-text {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.navbar-default .container {
+    padding: 0 30px;
+}
+
+.twitter-follow-button {
+    font-size: 0;
+    margin: 11px 0 11px 11px;
+}
+
+.content {
+    padding-top: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+#sidebar-nav {
+    float: left;
+    width: 27.5%;
+    min-width: 275px;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    overflow-y: scroll;
+}
+
+#list {
+    padding-left: 10px;
+}
+
+#tweets {
+    margin-top: 5px;
+    padding: 0px 10px 0px 0px;
+}
+
+#tweets h2 {
+    margin: 12px 0px 24px 0px;
+}
+
+#tweet {
+    max-width: 500px;
+}
+
+#tweet .profile {
+    float: left;
+    border-radius: 4px;
+    margin-right: 6px;
+    width: 60px;
+}
+
+#tweet .body {
+    float: left;
+    max-width: 400px;
+}
+
+#tweet .name {
+    font-weight: bold;
+}
+
+#tweet .handle {
+    color: #8899a6;
+}
+
+#tweet .text {
+    color: black;
+}
+
+#tweet .text:hover {
+    color: black;
+    text-decoration: none;
+}
+
+#map-canvas
+{
+    width: 72.5%;
+    min-width: 725px;
+    height: 100%;
+    float: left;
+    z-index: 0;
+}
+
+#map-canvas img {
+    max-width: none;
+}
+
+.controls {
+    margin-top: 16px;
+    border: 1px solid transparent;
+    border-radius: 2px 0 0 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: 32px;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#pac-input {
+    background-color: #fff;
+    padding: 0 11px 0 13px;
+    width: 600px;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    text-overflow: ellipsis;
+}
+
+#pac-input:focus {
+    border-color: #4d90fe;
+    margin-left: -1px;
+    padding-left: 14px;  /* Regular padding-left + 1. */
+    width: 401px;
+}
+
+.pac-container {
+    font-family: Roboto;
+}
+
+#type-selector {
+    color: #fff;
+    background-color: #4d90fe;
+    padding: 5px 11px 0px 11px;
+}
+
+#type-selector label {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 300;
+}
